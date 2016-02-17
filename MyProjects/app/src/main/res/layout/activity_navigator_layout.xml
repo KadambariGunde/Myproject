@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#393A3B"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnGreetUser"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.15"
+                    android:background="@drawable/bgyellow"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:text="Greet User"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/btnJokes"
+                    android:layout_width="188dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/joke"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="0"
+                    android:textColor="#E8D5E8"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/ibCalculator"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/cal" />
+
+
+                    <GridLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="10dp"
+                        android:columnCount="2"
+                        android:paddingLeft="10dp"
+                        android:rowCount="2">
+
+                        <Button
+                            android:id="@+id/btnMusic"
+                            android:layout_width="95dp"
+                            android:layout_height="70dp"
+                            android:layout_column="0"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_row="0"
+                            android:background="@drawable/music" />
+
+                        <Button
+                            android:id="@+id/btnContextMenu"
+                            android:layout_width="95dp"
+                            android:layout_height="70dp"
+                            android:layout_column="1"
+                            android:layout_row="0"
+                            android:background="#458C82"
+                            android:text="Context" />
+
+                        <Button
+                            android:id="@+id/btnCompass"
+                            android:layout_width="95dp"
+                            android:layout_height="70dp"
+                            android:layout_column="0"
+                            android:layout_row="1"
+                            android:background="@drawable/compass" />
+
+                        <Button
+                            android:id="@+id/btnToDoList"
+                            android:layout_width="95dp"
+                            android:layout_height="70dp"
+                            android:layout_column="1"
+                            android:layout_row="1"
+                            android:background="@drawable/list" />
+                    </GridLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnAlgorithmBenchmarker"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bgbrown"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="0"
+                    android:text="Algorithm Benchmarkers"
+                    android:textColor="#E8D5E8"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:id="@+id/btnMotiveMessage"
+                        android:layout_width="85dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="#4D8C29"
+                        android:text="Motive Message" />
+
+                    <Button
+                        android:id="@+id/btnFelightNews"
+                        android:layout_width="85dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="#4D8C29"
+                        android:text="Felight News" />
+
+                    <Button
+                        android:id="@+id/btnMenusDemo"
+                        android:layout_width="85dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="#838C37"
+                        android:text="Menus Demo" />
+
+                    <Button
+                        android:id="@+id/btnGoogleNews"
+                        android:layout_width="85dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="#458C82"
+                        android:text="Google News" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnPhotoshop"
+                    android:layout_width="170dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/photoshop" />
+
+                <Button
+                    android:id="@+id/btnCallLogger"
+                    android:layout_width="170dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/call" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnTreeLife"
+                    android:layout_width="170dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/tree1"
+                    android:text="Tree Life" />
+
+                <Button
+                    android:id="@+id/btnVideoPlayer"
+                    android:layout_width="170dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/video" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <GridLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="10dp"
+                        android:columnCount="4"
+                        android:rowCount="2">
+
+                        <Button
+                            android:id="@+id/btnNotification"
+                            android:layout_width="95dp"
+                            android:layout_height="70dp"
+                            android:layout_column="0"
+                            android:layout_marginRight="10dp"
+                            android:layout_row="0"
+                            android:background="@drawable/notify" />
+
+                        <Button
+                            android:id="@+id/btnSendSMS"
+                            android:layout_width="95dp"
+                            android:layout_height="70dp"
+                            android:layout_column="1"
+                            android:layout_marginRight="10dp"
+                            android:layout_row="0"
+                            android:background="@drawable/sms" />
+
+                        <Button
+                            android:id="@+id/btnWeb"
+                            android:layout_width="95dp"
+                            android:layout_height="70dp"
+                            android:layout_column="2"
+                            android:layout_marginRight="10dp"
+                            android:layout_row="0"
+                            android:background="#4CD00F"
+                            android:text="Web" />
+
+                        <Button
+                            android:id="@+id/btnColorList"
+                            android:layout_width="95dp"
+                            android:layout_height="70dp"
+                            android:layout_column="3"
+                            android:layout_marginRight="10dp"
+                            android:layout_row="0"
+                            android:background="#458DE0"
+                            android:text="Color List" />
+
+                        <Button
+                            android:id="@+id/btnSensorList"
+                            android:layout_width="95dp"
+                            android:layout_height="70dp"
+                            android:layout_column="0"
+                            android:layout_marginTop="10dp"
+                            android:layout_row="1"
+                            android:background="#E8D5E8"
+                            android:text="Sensor List" />
+
+                        <Button
+                            android:id="@+id/btnReadSensorData"
+                            android:layout_width="95dp"
+                            android:layout_height="70dp"
+                            android:layout_column="1"
+                            android:layout_row="1"
+                            android:background="#458DE0"
+                            android:text="Sensor Data" />
+
+                        <Button
+                            android:id="@+id/btnSharedPreference"
+                            android:layout_width="95dp"
+                            android:layout_height="70dp"
+                            android:layout_column="2"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_row="1"
+                            android:background="@drawable/settings" />
+
+                        <Button
+                            android:id="@+id/btnUserDetails"
+                            android:layout_width="95dp"
+                            android:layout_height="70dp"
+                            android:layout_column="3"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_row="1"
+                            android:background="@drawable/user" />
+
+                    </GridLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <GridLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    android:rowCount="2">
+
+                    <Button
+                        android:id="@+id/btnGoogleMap"
+                        android:layout_width="170dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/map" />
+
+                    <Button
+                        android:id="@+id/btnRatingBar"
+                        android:layout_width="170dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rating" />
+
+                    <Button
+                        android:id="@+id/btnRatingB"
+                        android:layout_width="170dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp" />
+
+                    <Button
+                        android:id="@+id/btnRating"
+                        android:layout_width="170dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp" />
+                </GridLayout>
+
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

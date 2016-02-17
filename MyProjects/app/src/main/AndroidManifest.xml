@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="myapplication.bits" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="ANDROID.PERMISSION.CHANGE_COMPONENT_ENABLED_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <receiver android:name=".BroadcastDemoActivity" >
+            <intent-filter>
+                <action android:name="android.intent.ation.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ContextMenuDemo"
+            android:label="Context Menu" >
+        </activity>
+        <activity
+            android:name=".PhotoshopActivity"
+            android:label="Photoshop" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <!-- <action android:name="ANDROID.INTENT.ACTION.PICK"/> -->
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:icon="@drawable/navigator"
+            android:label="Splash Screen" >
+
+        </activity>
+        <activity android:name=".NewsActivity" />
+        <activity
+            android:name=".ActivityNavigator"
+            android:label="Activity Navigator" />
+        <activity
+            android:name=".MenusDemoActivity"
+            android:label="Menus Demo Activity" />
+        <activity
+            android:name=".GoogleMusicActivity"
+            android:label="Google Music Activity" />
+        <activity
+            android:name=".JokeAppActivity"
+            android:label="Joke Activity" />
+        <activity
+            android:name=".AlgorithmBenchmarker"
+            android:label="Algorithm Benchmarking Activity" />
+        <activity
+            android:name=".ListViewActivity"
+            android:label="List View Activity" />
+        <activity
+            android:name=".MailerActivity"
+            android:label="Mailer Activity" />
+        <activity
+            android:name=".Calculator"
+            android:label="Calculator" />
+        <activity
+            android:name=".GreetUserActivity"
+            android:label="Greet User Activity" />
+        <activity
+            android:name=".HelloWorld"
+            android:label="Hello World" />
+        <activity
+            android:name=".MotiveMessageActivity"
+            android:label="Motive Message" />
+        <activity android:name=".TreeLifeActivity" />
+        <activity android:name=".NotificationDemoActivity" />
+        <activity
+            android:name=".SmsSenderActivity"
+            android:label="@string/title_activity_sms_sender" />
+        <activity
+            android:name=".WebViewActivity"
+            android:label="@string/title_activity_web_view" />
+
+        <service
+            android:name=".MusicService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".ColorListActivity"
+            android:label="@string/title_activity_color_list" />
+        <activity
+            android:name=".SensorListActivity"
+            android:label="@string/title_activity_sensor_list" />
+        <activity
+            android:name=".ReadSensorDataActivity"
+            android:label="@string/title_activity_read_sensor_data_acctivity" />
+        <activity
+            android:name=".SharedPreferenceDemoActivity"
+            android:label="@string/title_activity_shared_preference_demo" />
+        <activity
+            android:name=".UserDetailsActivity"
+            android:label="@string/title_activity_user_details" />
+        <activity
+            android:name=".CompassDemoActivity"
+            android:label="@string/title_activity_compass_demo" />
+        <activity
+            android:name=".PersonalDetailsActivity"
+            android:label="@string/title_activity_personal_details" />
+        <!--
+             <activity
+             android:name=".CompassView"
+             android:label="@string/title_activity_compass_view"></activity>
+        -->
+        <activity
+            android:name=".VideoPlayerActivity"
+            android:label="@string/title_activity_video_player" />
+        <activity
+            android:name="myapplication.helloworld.GoogleMapsActivity"
+            android:label="@string/title_activity_google_maps" />
+        <activity
+            android:name=".AsyncTaskDemoActivity"
+            android:label="AsyncTask Demo Activity" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDV4c_7362rg6_QP6yHsdNHeiAJx6wjbis" />
+
+        <activity
+            android:name=".ToDoListActivity"
+            android:label="@string/title_activity_to_do_list" >
+        </activity>
+        <activity
+            android:name="myapplication.project.InlineTablesActivity"
+            android:label="@string/title_activity_inline_tables" >
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

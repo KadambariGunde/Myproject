@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Hello World</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome_to_my_world">Welcome To My World</string>
+    <string name="title_activity_menus_demo">MenusDemoActivity</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="title_activity_photoshop">PhotoshopActivity</string>
+    <string name="title_activity_motive_message">MotiveMessageActivity</string>
+    <string name="title_activity_tree_life">TreeLifeActivity</string>
+    <string name="title_activity_notofication_demo">NotoficationDemoActivity</string>
+    <string name="title_activity_sms_sender">SmsSenderActivity</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="title_activity_color_list">ColorListActivity</string>
+    <string name="title_activity_sensor_list">SensorListActivity</string>
+    <string name="title_activity_read_sensor_data_acctivity">ReadSensorDataAcctivity</string>
+    <string name="title_activity_shared_preference_demo">SharedPreferenceDemoActivity</string>
+    <string name="title_activity_user_details">UserDetailsActivity</string>
+    <string name="title_activity_compass_demo">CompassDemoActivity</string>
+    <string name="title_activity_personal_details">PersonalDetailsActivity</string>
+    <string name="title_activity_compass_view">CompassView</string>
+    <string name="title_activity_video_player">VideoPlayerActivity</string>
+    <string name="title_activity_google_maps">Map</string>
+    <string name="title_activity_to_do_list">ToDoListActivity</string>
+    <string name="title_activity_inline_tables">InlineTablesActivity</string>
+</resources>

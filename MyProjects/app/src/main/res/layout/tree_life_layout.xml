@@ -1,0 +1,44 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bgred"
+        android:id="@+id/llLinear">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slider"
+            android:id="@+id/ibSlider"  />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:text="Tree Life"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:id="@+id/tvText" />
+
+        <FrameLayout
+            android:id="@+id/flFrameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <!-- Listview to display slider menu -->
+    <ListView
+        android:id="@+id/lvtree"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/bgyellow"
+        />
+
+</android.support.v4.widget.DrawerLayout>
